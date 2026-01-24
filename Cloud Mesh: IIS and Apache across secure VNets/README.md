@@ -55,7 +55,7 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 *** Provisioned storage account and added a container ****
 
 - Why Public storage account?
-Public network access is enabled on the storage account to allow the VM Custom Script Extension to retrieve the IIS deployment script. Since the storage account contains no sensitive data and is used solely for automation artifacts, this configuration is appropriate for a lab environment.
+  - Public network access is enabled on the storage account to allow the VM Custom Script Extension to retrieve the IIS deployment script. Since the storage account contains no sensitive data and is used solely for automation artifacts, this configuration is appropriate for a lab environment.
 
 
 - <img width="848" height="562" alt="image" src="https://github.com/user-attachments/assets/24420614-b3b2-4429-8d0a-7093a49b0553" />
