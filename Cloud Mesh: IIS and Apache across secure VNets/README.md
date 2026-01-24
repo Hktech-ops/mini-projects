@@ -9,8 +9,8 @@ The objective of this project is to design and deploy an Azure‑based simulatio
   - Deploy two isolated virtual networks representing on‑premises data center sites.
   - Create subnets, network interfaces, and virtual machines in each site.
   - Automate web server deployment using:
-  - Cloud‑init/UserData for IIS on Windows Server
-  - External Bash script for Apache on Linux
+    - Cloud‑init/UserData for IIS on Windows Server
+    - External Bash script for Apache on Linux
 
 2. Configure Local VNet Peering
   - Establish bidirectional VNet peering to simulate a mesh WAN.
