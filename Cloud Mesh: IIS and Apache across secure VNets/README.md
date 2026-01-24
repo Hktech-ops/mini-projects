@@ -63,3 +63,7 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 *** Uploaded PowerShell script to the container ***
 
 
+<img width="783" height="372" alt="image" src="https://github.com/user-attachments/assets/336d178f-931e-4edb-a6c8-f8b0f661ae1b" />
+
+https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
+*** Extracted script url ***
