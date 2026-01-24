@@ -60,6 +60,6 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 
 - <img width="848" height="562" alt="image" src="https://github.com/user-attachments/assets/24420614-b3b2-4429-8d0a-7093a49b0553" />
 
-*** Uplaoded PowerShell script to the container ***
+*** Uploaded PowerShell script to the container ***
 
 
