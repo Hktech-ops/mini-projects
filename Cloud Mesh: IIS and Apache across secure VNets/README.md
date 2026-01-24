@@ -42,7 +42,24 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 
 1. Provision Lab Environment:
 
+<img width="1462" height="351" alt="image" src="https://github.com/user-attachments/assets/3e43367a-e221-485e-a2a9-eec42f84d020" />
+<img width="446" height="320" alt="image" src="https://github.com/user-attachments/assets/70840c43-e31c-4569-bf43-435f822f1cd6" />
+<img width="420" height="318" alt="image" src="https://github.com/user-attachments/assets/16b8523e-616e-4a75-8655-2541690a814c" />
+
+*** Created 2 RGs and Deployed VNets and Subnets ***
 
 
+<img width="1405" height="346" alt="image" src="https://github.com/user-attachments/assets/e19665fb-ae2d-4d2c-9fb7-24ce123aef8c" />
+<img width="490" height="461" alt="image" src="https://github.com/user-attachments/assets/c921cc0d-47fd-4ed6-9690-cd1cd9a906b2" />
+
+*** Provisioned storage account and added a container ****
+
+- Why Public storage account?
+Public network access is enabled on the storage account to allow the VM Custom Script Extension to retrieve the IIS deployment script. Since the storage account contains no sensitive data and is used solely for automation artifacts, this configuration is appropriate for a lab environment.
+
+
+- <img width="848" height="562" alt="image" src="https://github.com/user-attachments/assets/24420614-b3b2-4429-8d0a-7093a49b0553" />
+
+*** Uplaoded PowerShell script to the container ***
 
 
