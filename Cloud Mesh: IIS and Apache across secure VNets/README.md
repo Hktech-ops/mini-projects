@@ -9,8 +9,8 @@ The objective of this project is to design and deploy an Azure‑based simulatio
   - Deploy two isolated virtual networks representing on‑premises data center sites.
   - Create subnets, network interfaces, and virtual machines in each site.
   - Automate web server deployment using:
-    - Cloud‑init/UserData for IIS on Windows Server
-    - External Bash script for Apache on Linux
+    - Custom script extension for IIS on Windows Server
+    - User Data script for Apache on Linux
 
 2. Configure Local VNet Peering
   - Establish bidirectional VNet peering to simulate a mesh WAN.
@@ -68,4 +68,11 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 *** Extracted script url ***
 
+<img width="1635" height="618" alt="image" src="https://github.com/user-attachments/assets/44e388af-d9a2-4fbf-a7d5-b9735cacdfad" />
+
+*** Deployed Windows server with custom IIS installation script
+
+<img width="1560" height="622" alt="image" src="https://github.com/user-attachments/assets/8f35c1ad-9af0-4afa-9201-ae32b0ec3d35" />
+
+*** Deployed Ubuntu VM with user data, containing Apache installation script ***
 
