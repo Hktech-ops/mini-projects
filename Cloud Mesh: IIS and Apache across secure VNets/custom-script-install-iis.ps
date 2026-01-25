@@ -1,0 +1,18 @@
+# Install IIS Web Server with management tools
+Install-WindowsFeature -Name Web-Server -IncludeManagementTools
+
+# Define the IIS root directory
+$path = "C:\inetpub\wwwroot"
+
+# Create a custom HTML page
+$html = @"
+<html>
+  <head><title>Custom Script Extensions Demo</title></head>
+  <body>
+    <h1>We now have Internet Information Services running on the machine</h1>
+  </body>
+</html>
+"@
+
+# Save the HTML content to default.html
+Set-Content -Path "$path\default.html" -Value $html -Force
