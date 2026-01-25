@@ -43,8 +43,8 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 1. Provision Lab Environment:
 
 <img width="1462" height="351" alt="image" src="https://github.com/user-attachments/assets/3e43367a-e221-485e-a2a9-eec42f84d020" />
-<img width="446" height="320" alt="image" src="https://github.com/user-attachments/assets/70840c43-e31c-4569-bf43-435f822f1cd6" />
-<img width="420" height="318" alt="image" src="https://github.com/user-attachments/assets/16b8523e-616e-4a75-8655-2541690a814c" />
+<img width="400" height="319" alt="image" src="https://github.com/user-attachments/assets/b0455e57-86e3-4a37-b8d0-24e945cf7453" />
+<img width="386" height="198" alt="image" src="https://github.com/user-attachments/assets/28610fe0-57b7-428c-a513-b291e0d4744a" />
 
 *** Created 2 RGs and Deployed VNets and Subnets ***
 
@@ -67,3 +67,5 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 
 https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 *** Extracted script url ***
+
+
