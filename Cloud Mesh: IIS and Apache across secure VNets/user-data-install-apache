@@ -1,0 +1,16 @@
+User data script (Boot strap script):
+#!/bin/bash
+# Wait until network is ready
+until ping -c1 8.8.8.8 &>/dev/null; do :; done
+# Update packages
+sudo apt update -y
+sudo apt install -y apache2
+# Start & enable Apache
+sudo systemctl start apache2
+sudo systemctl enable apache2
+# Permissions for web folder
+sudo chmod 777 -R /var/www/html
+# Create webpage
+echo "<h1> Welcome to Rajco Session $(hostname -f) </h1>" > /var/www/html/index.html
+# Restart Apache
+sudo systemctl restart apache2
