@@ -12,10 +12,8 @@ The objective of this project is to design and deploy an Azure‑based simulatio
     - Custom script extension for IIS on Windows Server
     - User Data script for Apache on Linux
 
-2. Configure Local VNet Peering
+2.  Configure bi-directional VNet Peering:
   - Establish bidirectional VNet peering to simulate a mesh WAN.
-  - Validate that address spaces do not overlap.
-  - Ensure forwarded traffic and gateway transit settings align with enterprise patterns
 
 3. Test Intersite Connectivity
   - Verify VM‑to‑VM communication across peered VNets.
@@ -70,9 +68,51 @@ https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 
 <img width="1635" height="618" alt="image" src="https://github.com/user-attachments/assets/44e388af-d9a2-4fbf-a7d5-b9735cacdfad" />
 
-*** Deployed Windows server with custom IIS installation script
+*** Deployed Private Windows server with custom IIS installation script ***
+*** Private IP of vm-1 : 10.0.0.4 ***
 
 <img width="1560" height="622" alt="image" src="https://github.com/user-attachments/assets/8f35c1ad-9af0-4afa-9201-ae32b0ec3d35" />
 
-*** Deployed Ubuntu VM with user data, containing Apache installation script ***
+*** Deployed Private Ubuntu VM with user data, containing Apache installation script ***
+*** Private IP of vm-2 : 10.1.0.4 ***
+
+2. Configure bi-directional VNet Peering:
+
+<img width="1288" height="102" alt="image" src="https://github.com/user-attachments/assets/1966842d-9ea6-460c-9065-4af2e05083d8" />
+
+*** Queried ids of both the VNets ***
+
+<img width="1445" height="287" alt="image" src="https://github.com/user-attachments/assets/0688aa6a-6f43-4cb2-8c20-bde22c5a5059" />
+
+*** Peering from VNet-1 to VNet-2 ***
+
+<img width="1541" height="344" alt="image" src="https://github.com/user-attachments/assets/51c40a6e-fa8e-46ee-9a3c-d3b09d183a0a" />
+
+*** Peering from VNet-2 to VNet-1 ***
+
+<img width="1011" height="430" alt="image" src="https://github.com/user-attachments/assets/d49bbe8c-54bb-48a1-8bbc-930277922c81" />
+<img width="1092" height="447" alt="image" src="https://github.com/user-attachments/assets/1f644ada-60e4-4a25-a723-f9e1b6f52637" />
+
+*** Verified both peerings in portal ***
+
+
+3. Test Intersite (End to End) Connectivity
+
+a. Layer 3 - Basic Network Reachability
+
+<img width="1358" height="839" alt="image" src="https://github.com/user-attachments/assets/f3e4d328-ea66-4180-b076-28ae6bc369df" />
+
+*** Successfully pinged vm-2 from vm-1 ***
+
+b. Layer 4 - Port level connectivity (TCP)
+
+<img width="1472" height="346" alt="image" src="https://github.com/user-attachments/assets/ba01f167-1352-466b-9824-0f368584365a" />
+<img width="497" height="612" alt="image" src="https://github.com/user-attachments/assets/048d4219-82a7-4722-a382-78be36da77e5" />
+
+*** Successfully validated port level connectivity b/w two VMs ***
+
+c. Layer 7 - Application level connectivity
+
+<img width="1285" height="828" alt="image" src="https://github.com/user-attachments/assets/cb4eebee-d65e-491e-95de-bc8a12995798" />
+<img width="949" height="641" alt="image" src="https://github.com/user-attachments/assets/eede3be7-5f39-4bef-bd5b-ad8888165f92" />
 
