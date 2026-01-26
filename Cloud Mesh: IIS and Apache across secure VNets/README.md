@@ -10,23 +10,20 @@ The objective of this project is to design and deploy an Azure‑based simulatio
   - Create subnets, network interfaces, and virtual machines in each site.
   - Automate web server deployment using:
     - Custom script extension for IIS on Windows Server
-    - User Data script for Apache on Linux
+    - User Data script for Apache on Ubuntu Server
 
 2.  Configure bi-directional VNet Peering:
   - Establish bidirectional VNet peering to simulate a mesh WAN.
 
 3. Test Intersite Connectivity
-  - Verify VM‑to‑VM communication across peered VNets.
-  - Use tools such as:
-  - Test-NetConnection (Windows)
-  - curl / ping / wget (Linux)
-  - Confirm HTTP access to both web servers from each site.
+  - Verify VM‑to‑VM communication across peered VNets
+    - Layer 1 : basic reachability
+    - Layer 4 : port connectivity
+    - Laye 7 : application level connectivity 
 
 4. Secure the Virtual Network
-  - Implement Network Security Groups (NSGs) at subnet or NIC level.
-  - Allow only required inbound ports (HTTP/HTTPS, RDP/SSH).
-  - Deny all unnecessary traffic.
-  - (Optional) Enable NSG Flow Logs for traffic visibility
+  - Implement Network Security Group (NSG) at subnet level
+  - Deploy Bastion host to securely connect to VMs
 
 5. Architecture Diagram
 
@@ -38,7 +35,7 @@ The diagram illustrates two Azure VNets representing on‑premises data centers,
 
 ## Tasks:
 
-1. Provision Lab Environment:
+## 1. Provision Lab Environment:
 
 <img width="1462" height="351" alt="image" src="https://github.com/user-attachments/assets/3e43367a-e221-485e-a2a9-eec42f84d020" />
 <img width="400" height="319" alt="image" src="https://github.com/user-attachments/assets/b0455e57-86e3-4a37-b8d0-24e945cf7453" />
@@ -76,7 +73,7 @@ https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 *** Deployed Private Ubuntu VM with user data, containing Apache installation script ***
 *** Private IP of vm-2 : 10.1.0.4 ***
 
-2. Configure bi-directional VNet Peering:
+## 2. Configure bi-directional VNet Peering:
 
 <img width="1288" height="102" alt="image" src="https://github.com/user-attachments/assets/1966842d-9ea6-460c-9065-4af2e05083d8" />
 
@@ -96,7 +93,7 @@ https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 *** Verified both peerings in portal ***
 
 
-3. Secure the VNets (via NSG):
+## 3. Secure the VNets (via NSG):
 
 <img width="981" height="274" alt="image" src="https://github.com/user-attachments/assets/4be2daf6-5844-432c-a15a-a996b364f3bc" />
 <img width="564" height="246" alt="image" src="https://github.com/user-attachments/assets/c920b7ce-2163-4d94-9dab-b1e1426994c0" />
@@ -111,13 +108,8 @@ https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 
 
 
-For testing purpose, create 2 inbound rules and attached NSG to subnet-2 
 
-
-
-
-
-4. Test Intersite (End to End) Connectivity
+## 4. Test Intersite (End to End) Connectivity
 
 a. Layer 3 - Basic Network Reachability
 
@@ -139,3 +131,6 @@ c. Layer 7 - Application level connectivity
 <img width="949" height="641" alt="image" src="https://github.com/user-attachments/assets/eede3be7-5f39-4bef-bd5b-ad8888165f92" />
 <img width="1836" height="841" alt="image" src="https://github.com/user-attachments/assets/17b69efd-0f9d-411d-b5bf-92c32a031188" />
 
+
+
+## THIS MARKS THE END OF THIS PROJECT ##
