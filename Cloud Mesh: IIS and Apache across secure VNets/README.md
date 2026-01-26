@@ -96,7 +96,29 @@ https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 *** Verified both peerings in portal ***
 
 
-3. Test Intersite (End to End) Connectivity
+3. Secure the VNets (via NSG):
+
+<img width="981" height="274" alt="image" src="https://github.com/user-attachments/assets/4be2daf6-5844-432c-a15a-a996b364f3bc" />
+<img width="737" height="490" alt="image" src="https://github.com/user-attachments/assets/77532118-0e5c-4017-9a97-575abfd65cc3" />
+
+
+
+<img width="1018" height="661" alt="image" src="https://github.com/user-attachments/assets/f4b808a4-0a4c-4649-b3cd-6b3353377b70" />
+
+
+*** Allowed inbound SSH on port 22 from my IP address - for the scope of this lab ***
+
+*** Additionally, deployed Bastion host to connect to vm-2, for simulating real world scenario ***
+
+*** Successfully connected to vm-2 via both SSH and Bastion Host ***
+
+For testing purpose, create 2 inbound rules and attached NSG to subnet-2 
+
+
+
+
+
+4. Test Intersite (End to End) Connectivity
 
 a. Layer 3 - Basic Network Reachability
 
@@ -116,4 +138,5 @@ c. Layer 7 - Application level connectivity
 
 <img width="1285" height="828" alt="image" src="https://github.com/user-attachments/assets/cb4eebee-d65e-491e-95de-bc8a12995798" />
 <img width="949" height="641" alt="image" src="https://github.com/user-attachments/assets/eede3be7-5f39-4bef-bd5b-ad8888165f92" />
+<img width="1836" height="841" alt="image" src="https://github.com/user-attachments/assets/17b69efd-0f9d-411d-b5bf-92c32a031188" />
 
