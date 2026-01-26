@@ -106,8 +106,9 @@ a. Layer 3 - Basic Network Reachability
 
 b. Layer 4 - Port level connectivity (TCP)
 
-<img width="1472" height="346" alt="image" src="https://github.com/user-attachments/assets/ba01f167-1352-466b-9824-0f368584365a" />
-<img width="497" height="612" alt="image" src="https://github.com/user-attachments/assets/048d4219-82a7-4722-a382-78be36da77e5" />
+<img width="1501" height="350" alt="image" src="https://github.com/user-attachments/assets/3e5cc4cc-eb1a-4be7-ba9d-b598ec46dbb6" />
+<img width="405" height="406" alt="image" src="https://github.com/user-attachments/assets/9515b03f-6049-430b-b6d0-bf2569b0a8a6" />
+
 
 *** Successfully validated port level connectivity b/w two VMs ***
 
