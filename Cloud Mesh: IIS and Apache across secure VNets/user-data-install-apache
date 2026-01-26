@@ -1,7 +1,5 @@
 User data script (Boot strap script):
 #!/bin/bash
-# Wait until network is ready
-until ping -c1 8.8.8.8 &>/dev/null; do :; done
 # Update packages
 sudo apt update -y
 sudo apt install -y apache2
