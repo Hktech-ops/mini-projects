@@ -99,18 +99,17 @@ https://iisdeploymentstorage.blob.core.windows.net/scripts/install-iis.ps1
 3. Secure the VNets (via NSG):
 
 <img width="981" height="274" alt="image" src="https://github.com/user-attachments/assets/4be2daf6-5844-432c-a15a-a996b364f3bc" />
-<img width="737" height="490" alt="image" src="https://github.com/user-attachments/assets/77532118-0e5c-4017-9a97-575abfd65cc3" />
+<img width="564" height="246" alt="image" src="https://github.com/user-attachments/assets/c920b7ce-2163-4d94-9dab-b1e1426994c0" />
 
+*** Inboud HTTP from vm-1 to vm-2 ***
 
 
 <img width="1018" height="661" alt="image" src="https://github.com/user-attachments/assets/f4b808a4-0a4c-4649-b3cd-6b3353377b70" />
 
 
-*** Allowed inbound SSH on port 22 from my IP address - for the scope of this lab ***
+*** Deployed Bastion host to connect to vm-2 (private VM) ***
 
-*** Additionally, deployed Bastion host to connect to vm-2, for simulating real world scenario ***
 
-*** Successfully connected to vm-2 via both SSH and Bastion Host ***
 
 For testing purpose, create 2 inbound rules and attached NSG to subnet-2 
 
