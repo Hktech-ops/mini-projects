@@ -1,1 +1,2 @@
-
+This project implements a production‑grade architecture for hosting a static web application on Microsoft Azure. The solution uses Virtual Machine Scale Sets (VMSS) to automatically scale compute resources based on demand, while an Azure Load Balancer distributes traffic across healthy instances to ensure high availability.
+To eliminate single points of failure, the deployment spans multiple Availability Zones, providing zone‑level redundancy and improved resilience.
