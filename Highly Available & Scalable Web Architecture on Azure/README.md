@@ -22,7 +22,8 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 
 ## Architecture Diagram:
 
-<img width="1341" height="733" alt="image" src="https://github.com/user-attachments/assets/fede53a2-99c8-4398-abd6-0be21242530f" />
+<img width="1356" height="742" alt="image" src="https://github.com/user-attachments/assets/640c918d-c101-4491-8b32-31120fc39fd9" />
+
 
 
 * Inbound flow : Internet → Load Balancer → VMSS NICs (private subnet)
