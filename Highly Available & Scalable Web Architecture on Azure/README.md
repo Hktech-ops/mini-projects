@@ -1,2 +1,25 @@
-This project implements a production‑grade architecture for hosting a static web application on Microsoft Azure. The solution uses Virtual Machine Scale Sets (VMSS) to automatically scale compute resources based on demand, while an Azure Load Balancer distributes traffic across healthy instances to ensure high availability.
-To eliminate single points of failure, the deployment spans multiple Availability Zones, providing zone‑level redundancy and improved resilience.
+## Highly Available and Scalable Web Architecture on Azure
+
+This project delivers a production-ready, scalable, and secure web architecture built on Microsoft Azure.
+The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer for traffic distribution across healthy instances, and multi-zonal deployment to eliminate single points of failure, providing zone-level redundancy and high availability.
+
+- The environment follow modern cloud architecture practices, including:
+
+  * Hub–Spoke VNet topology 
+  * NSGs with least-privilege rules
+  * Route tables for forced tunneling
+  * Bastion for secure Admin access
+
+
+---------------------------
+
+Hub and Spoke Network topology:
+
+Hub Vnet: for secure resources : Shared security devices
+  Bastion
+
+Spoke Vnet: Application Workload
+  VMSS
+  Load Balancer
+  NSG
+  Route tables (flow through public subnet)
