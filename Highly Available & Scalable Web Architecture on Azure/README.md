@@ -28,6 +28,16 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 * Inbound flow : Internet → Load Balancer → VMSS NICs (private subnet)
 * Outbound flow : VMSS (private subnet) → Public Subnet → Internet
 
-Highlights of Architecture:
+
+-------------------------
+
+## IMPLEMENTATION:
+
+
+## TASK 1: Provisioning of Resource Group, VNets and Subnets:
+
+
+
+
 
 
