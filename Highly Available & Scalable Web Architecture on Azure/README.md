@@ -5,16 +5,16 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 
 - The environment follows modern cloud architecture practices, including:
 
- - Hub–Spoke VNet topology
- - Bastion for secure Admin access
- - NSGs with least-privilege rules
- - Route tables for forced tunneling
+  - Hub–Spoke VNet topology
+  - Bastion for secure Admin access
+  - NSGs with least-privilege rules
+  - Route tables for forced tunneling
 
 - Security features include:
 
-- Simple DMZ-like public subnet
-- Routing + Subnet isolation
-- Block direct outbound (from private VM instances)
+  - Simple DMZ-like public subnet
+  - Routing + Subnet isolation
+  - Block direct outbound (from private VM instances)
 
 
 ---------------------------
@@ -22,7 +22,8 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 
 ## Architecture Diagram:
 
-<img width="1337" height="728" alt="image" src="https://github.com/user-attachments/assets/47c56330-0ae2-4a90-bbc1-32747b261585" />
+<img width="1341" height="733" alt="image" src="https://github.com/user-attachments/assets/fede53a2-99c8-4398-abd6-0be21242530f" />
+
 
 * Inbound flow : Internet → Load Balancer → VMSS NICs (private subnet)
 * Outbound flow : VMSS (private subnet) → Public Subnet → Internet
