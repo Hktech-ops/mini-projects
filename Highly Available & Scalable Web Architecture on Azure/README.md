@@ -42,6 +42,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 ## TASK 1: Provisioning of Resource Group, VNets, Subnets, Route Tables and Routes:
 
 <img width="1463" height="371" alt="image" src="https://github.com/user-attachments/assets/28f6f3b0-a59a-4f6d-84ef-842e56c166ce" />
+
 *** Vnets and Subnets ***
 
 - 
@@ -58,11 +59,13 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 -
 
 <img width="1091" height="467" alt="image" src="https://github.com/user-attachments/assets/4db76ab9-3447-4ac1-b273-43436af3e38f" />
+
 *** Private Route table routes ***
 
 -
 
 <img width="1128" height="322" alt="image" src="https://github.com/user-attachments/assets/62c4790e-cfa5-4f5b-b661-0a92393ca3c2" />
+
 *** Listed all routes ***
 
 
@@ -87,18 +90,29 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 
  -----------------------
 
-<img width="365" height="110" alt="image" src="https://github.com/user-attachments/assets/68ea0f38-f0c7-4ee2-8411-4299e7394c7a" />
-<img width="1899" height="262" alt="image" src="https://github.com/user-attachments/assets/a6032cd0-6ad2-4d9d-b0de-ee4225c7bbb6" />
+<img width="1828" height="415" alt="image" src="https://github.com/user-attachments/assets/3adc3b8a-87de-4486-87b9-793caf2676ea" />
+<img width="1855" height="413" alt="image" src="https://github.com/user-attachments/assets/fbcb4707-76e5-46cf-8d9b-aa44321961d7" />
+<img width="1890" height="430" alt="image" src="https://github.com/user-attachments/assets/8430af40-18a0-4188-a364-a6a9d73243f2" />
+
 *** Provisioned NSG rules ***
 
+-
+
+<img width="1844" height="302" alt="image" src="https://github.com/user-attachments/assets/55a45cc2-d960-40d2-866c-e08400812d3a" />
+
+
 - Inbound rules :
-  - Allow inbound traffic from Load Balacer on port 80
+  - Allow inbound from Load Balacer on port 80
+  - Allow inbound from Bastion on port 22 
   - Deny all other inbound
 
 
 
-<img width="1885" height="250" alt="image" src="https://github.com/user-attachments/assets/c2e6240d-6b27-4c63-8dc5-72ec3b19f8f4" />
-*** Associated NSG with NIC ***
+<img width="1401" height="225" alt="image" src="https://github.com/user-attachments/assets/2bed98af-3128-44f0-9d82-b9e209ed45dd" />
+
+*** Associated NSG with privateSubnet ***
+- Why associate NSG with privateSubnet ?
+  -  VMSS --> Uniform mode. Since Azure treats entire scale set as a homogeneous pool identical instances, it has to be applied at the subnet              level
 
 ---------------------------
 
@@ -113,10 +127,6 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 
 *** Bastion public ip and deployment ***
 
-- 
-
-<img width="1878" height="214" alt="image" src="https://github.com/user-attachments/assets/c5823ec6-2f64-4146-b423-bedc66472a6e" />
-*** NSG rule to allow Bastion access to VMs ***
 
 ------------------------------
 
