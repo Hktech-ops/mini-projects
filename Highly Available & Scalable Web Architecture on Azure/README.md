@@ -26,7 +26,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 
 ## Architecture Diagram:
 
-<img width="1356" height="742" alt="image" src="https://github.com/user-attachments/assets/640c918d-c101-4491-8b32-31120fc39fd9" />
+<img width="1316" height="740" alt="image" src="https://github.com/user-attachments/assets/bb7e9909-2f96-476d-9471-3709ed31ae9c" />
 
 
 
