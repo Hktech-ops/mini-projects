@@ -17,6 +17,10 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
   - Block direct outbound (from private VM instances)
 
 
+
+
+- stateless web tier (apache and all web servers)
+- which is good for VMSS in uniform mode! fit these two in!
 ---------------------------
 
 
