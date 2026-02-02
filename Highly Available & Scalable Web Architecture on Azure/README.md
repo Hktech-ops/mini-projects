@@ -141,8 +141,18 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 
 ## TASK 4: Configured and Deployed Load Balancer
 
+<img width="1156" height="645" alt="image" src="https://github.com/user-attachments/assets/e37d677e-2850-440d-b4b0-962f03501030" />
+
+- Deployed a public Load Balancer with the following inbound and outbound rules:
+  - Inbound - Allow HTTP on port 80
+    - HTTP health probe (port 80)
+  - Outbound - Allowed Internet outbound from scale set instances - for updating packages and other tasks which require outbound internet                    access 
 
 
+-
 
+<img width="1696" height="343" alt="image" src="https://github.com/user-attachments/assets/269612f0-2f64-4459-ac54-8ab7e8a05c46" />
+
+*** Finally upgraded instance after adding it to the backend pool of Load Balancer, to make it effective ***
 
 
