@@ -156,3 +156,13 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 *** Finally upgraded instance after adding it to the backend pool of Load Balancer, to make it effective ***
 
 
+
+
+## TESTING:
+
+1. Scalability : Manually increased the stress and VMSS deployed 2nd instance
+
+<img width="937" height="227" alt="image" src="https://github.com/user-attachments/assets/4b776ed4-9d63-4c7e-8ee8-741ff07022b6" />
+<img width="1427" height="385" alt="image" src="https://github.com/user-attachments/assets/ac1bb8ce-de09-4745-b65f-a727706316ed" />
+
+2. 
