@@ -117,7 +117,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Load Balancer 
 ---------------------------
 
 
-## TASK 3: Deployed Bastion Host for secure access to private VMs and configured bi-directional peering b/w the two VNets:
+## TASK 3: Deployed Bastion Host and configured bi-directional peering b/w the two VNets:
 
 - I have already provisioned a dedicated AzureBastionSubnet in hubVNet
 - Allocated a standard, static public IP address for Bastion
