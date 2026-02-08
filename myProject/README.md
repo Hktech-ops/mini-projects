@@ -25,6 +25,15 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 - For implemetation, I captured two golden images, for each VM with their respective configurations and deployed them in scale set 
 ---------------------------------------------------
 
+# Architecture Diagram:
+
+<img width="1109" height="621" alt="image" src="https://github.com/user-attachments/assets/753630ad-e0eb-4a1a-85ec-0e9fd8421066" />
+
+Inbound flow  :  Internet --> Firewall --> Application Gateway --> webSubnet (VMSS)
+Outbound flow :  workloadVnet --> Firewall --> Internet
+
+---------------------------------------------------
+
 ## Demonstration:
 
 # Task 1 : 
