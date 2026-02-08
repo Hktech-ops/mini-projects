@@ -30,7 +30,15 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 <img width="1063" height="539" alt="image" src="https://github.com/user-attachments/assets/720df0e5-c81d-40a2-b7ed-e334c3844d8f" />
 
 - Inbound flow  :  Internet --> Firewall --> Application Gateway(private) --> webSubnet (VMSS)
+
+  <img width="223" height="142" alt="image" src="https://github.com/user-attachments/assets/51ebace4-8981-4fa8-b4b1-d0dba59a1c02" />
+  
 - Outbound flow :  webSubnet --> Firewall --> Internet
+
+  <img width="256" height="143" alt="image" src="https://github.com/user-attachments/assets/ee1a555f-c10a-4477-b901-f85eb851b62d" />
+ 
+*** Inbound + Outbound traffic is centrally controlled : Firewall inspects everything! ***
+
 
 ---------------------------------------------------
 
@@ -51,11 +59,12 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 - Captured Images : Apache Servers - VM1 (defult + products page) & VM2 (offers + payments page)
 
-<img width="1001" height="103" alt="image" src="https://github.com/user-attachments/assets/37c382b0-a1c1-432d-824a-d487d4f2b962" />
+<img width="1037" height="139" alt="image" src="https://github.com/user-attachments/assets/75dfe178-f43a-416d-83b8-d15dfe7c1a7e" />
 
-- 2 public ips required for this project :
+- public ips required for this project :
   - firewall-pip
   - bastion-pip
+  - appGateway-pip (NOT exposed to internet - created just to be able to use Firewall)
 
 
 <img width="930" height="348" alt="image" src="https://github.com/user-attachments/assets/4912d4c2-68e2-41c9-96d7-ca68c2b8d11e" />
@@ -93,6 +102,10 @@ Task 3 : Firewall, Application Gateway and User-defined Routes
 <img width="645" height="239" alt="image" src="https://github.com/user-attachments/assets/89e24460-3251-44f4-b914-1e1ea59044ec" />
 
 - Created myFirewall
+
+<img width="771" height="233" alt="image" src="https://github.com/user-attachments/assets/9a568706-1b3a-4e9f-9478-d5df701166e5" />
+
+- Firewall ip-config
 
 
 
