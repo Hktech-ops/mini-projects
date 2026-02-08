@@ -27,10 +27,9 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 # Architecture Diagram:
 
-<img width="1057" height="534" alt="image" src="https://github.com/user-attachments/assets/1910fc49-244d-4d6c-b99e-6ee287f730cd" />
+<img width="1063" height="539" alt="image" src="https://github.com/user-attachments/assets/720df0e5-c81d-40a2-b7ed-e334c3844d8f" />
 
-
-- Inbound flow  :  Internet --> Firewall --> Application Gateway --> webSubnet (VMSS)
+- Inbound flow  :  Internet --> Firewall --> Application Gateway(private) --> webSubnet (VMSS)
 - Outbound flow :  webSubnet --> Firewall --> Internet
 
 ---------------------------------------------------
@@ -52,12 +51,11 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 - Captured Images : Apache Servers - VM1 (defult + products page) & VM2 (offers + payments page)
 
-<img width="1037" height="138" alt="image" src="https://github.com/user-attachments/assets/379c9e86-309b-453b-86e3-32ec1d90c526" />
+<img width="1001" height="103" alt="image" src="https://github.com/user-attachments/assets/37c382b0-a1c1-432d-824a-d487d4f2b962" />
 
-- 3 public ips required for this project :
+- 2 public ips required for this project :
   - firewall-pip
   - bastion-pip
-  - appGateway-pip 
 
 
 <img width="930" height="348" alt="image" src="https://github.com/user-attachments/assets/4912d4c2-68e2-41c9-96d7-ca68c2b8d11e" />
@@ -90,4 +88,11 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 ---------------------------------------
 
 Task 3 : Firewall, Application Gateway and User-defined Routes
+
+
+<img width="645" height="239" alt="image" src="https://github.com/user-attachments/assets/89e24460-3251-44f4-b914-1e1ea59044ec" />
+
+- Created myFirewall
+
+
 
