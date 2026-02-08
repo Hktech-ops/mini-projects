@@ -65,6 +65,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
   - firewall-pip
   - bastion-pip
   - appGateway-pip (both private and public IP, however, public IP is NOT exposed to internet, keeping the gateway private)
+    - created merely as Standard V2 Application Gateway required to have both public and private IP addresses! 
 
 
 <img width="930" height="348" alt="image" src="https://github.com/user-attachments/assets/4912d4c2-68e2-41c9-96d7-ca68c2b8d11e" />
@@ -115,5 +116,24 @@ Task 3 : Firewall, Application Gateway and User-defined Routes
 
 path based routing rules
 allowed from private ip of app gateway --> why? firewall DNAT will translate allowed incoming traffic to app gateway's private ip 
+
+
+----------------------
+
+<img width="646" height="197" alt="image" src="https://github.com/user-attachments/assets/d2656ee7-ded5-48b9-98a3-575428c97b3d" />
+
+- Queried Private IP address of Firewall
+
+
+<img width="1089" height="326" alt="image" src="https://github.com/user-attachments/assets/d63b76ff-05cf-4410-9ff2-1305d6058089" />
+
+
+
+<img width="1710" height="432" alt="image" src="https://github.com/user-attachments/assets/71340a8a-30f7-47fd-a927-0bf990d3616e" />
+**** NSG with inbound from App Gateway ***
+
+
+<img width="506" height="241" alt="image" src="https://github.com/user-attachments/assets/da8980e8-6adb-41fd-9229-10328fee9b4b" />
+*** associated with webSubnet
 
 
