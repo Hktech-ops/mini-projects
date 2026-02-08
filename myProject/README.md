@@ -27,10 +27,11 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 # Architecture Diagram:
 
-<img width="1109" height="621" alt="image" src="https://github.com/user-attachments/assets/753630ad-e0eb-4a1a-85ec-0e9fd8421066" />
+<img width="1051" height="572" alt="image" src="https://github.com/user-attachments/assets/080e4722-a483-4dd1-a642-4129addc8a5c" />
 
-Inbound flow  :  Internet --> Firewall --> Application Gateway --> webSubnet (VMSS)
-Outbound flow :  workloadVnet --> Firewall --> Internet
+
+- Inbound flow  :  Internet --> Firewall --> Application Gateway --> webSubnet (VMSS)
+- Outbound flow :  workloadVnet --> Firewall --> Internet
 
 ---------------------------------------------------
 
