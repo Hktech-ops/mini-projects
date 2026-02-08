@@ -27,7 +27,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 # Architecture Diagram:
 
-<img width="1075" height="550" alt="image" src="https://github.com/user-attachments/assets/be2279b4-fb09-484e-bd1d-564cde277c64" />
+<img width="1057" height="534" alt="image" src="https://github.com/user-attachments/assets/1910fc49-244d-4d6c-b99e-6ee287f730cd" />
 
 
 - Inbound flow  :  Internet --> Firewall --> Application Gateway --> webSubnet (VMSS)
@@ -37,7 +37,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 ## Demonstration:
 
-# Task 1 : Vnets, Subnets & Golden image, Public IPs
+# Task 1 : Vnets, Subnets & Golden image, Public IPs, Peering
 
 
 <img width="639" height="141" alt="image" src="https://github.com/user-attachments/assets/7f4d2177-10c0-4231-835a-c61762ca4e32" />
@@ -59,5 +59,31 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
   - bastion-pip
   - appGateway-pip 
 
+
+<img width="930" height="348" alt="image" src="https://github.com/user-attachments/assets/4912d4c2-68e2-41c9-96d7-ca68c2b8d11e" />
+
+- Peering : mgmtVnet <---> workloadVnet
+
+
+# Task 2 : Scale Sets (uniform orchestration), Custom Auto Scale rules User-defined Routes, 
+
+- Deployed two scale sets in uniform orchestration mode. Why? Identical VMs (except for thier content) in the scale set
+- Custom auto scale rules : Scale out & Scale in based on avg. CPU usage
+  - Scale out : Avg. CPU usage > 70%
+  - Scale in : Avg. CPU uage < 30 for a duration of 5 mins
+
+-------------------------------
+
+<img width="880" height="126" alt="image" src="https://github.com/user-attachments/assets/eb51aaaa-7ec8-4ac5-936b-f719bb7f4090" />
+
+- Deployed 2 VM Scale Sets
+  
+<img width="1896" height="288" alt="image" src="https://github.com/user-attachments/assets/75f70ee8-f796-435f-abe5-8f9af9a46426" />
+
+- VMSS instances
+
+<img width="839" height="313" alt="image" src="https://github.com/user-attachments/assets/b03fb266-d7ab-42ca-b77f-89203a2f9b48" />
+
+- Scaling rules
 
 
