@@ -59,11 +59,12 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 - Captured Images : Apache Servers - VM1 (defult + products page) & VM2 (offers + payments page)
 
-<img width="1004" height="106" alt="image" src="https://github.com/user-attachments/assets/8adc40ad-7f17-4f47-9b59-788911798088" />
+<img width="1032" height="126" alt="image" src="https://github.com/user-attachments/assets/f0f7ec51-f751-4a17-8734-3e0b9186561a" />
 
 - 2 public ips required for this project :
   - firewall-pip
   - bastion-pip
+  - appGateway-pip (both private and public IP, however, public IP is NOT exposed to internet, keeping the gateway private)
 
 
 <img width="930" height="348" alt="image" src="https://github.com/user-attachments/assets/4912d4c2-68e2-41c9-96d7-ca68c2b8d11e" />
@@ -107,4 +108,10 @@ Task 3 : Firewall, Application Gateway and User-defined Routes
 - Firewall ip-config
 
 
+--- app gateway
 
+
+<img width="832" height="766" alt="image" src="https://github.com/user-attachments/assets/f6a3993d-dbce-4448-ada6-7f027492dd15" />
+
+path based routing rules
+allowed from private ip of app gateway --> why? firewall DNAT will translate allowed incoming traffic to app gateway's private ip 
