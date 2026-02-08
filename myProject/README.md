@@ -27,7 +27,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 # Architecture Diagram:
 
-<img width="1042" height="564" alt="image" src="https://github.com/user-attachments/assets/4540d3fe-14f2-45d5-8962-adc9faa554ab" />
+<img width="1075" height="550" alt="image" src="https://github.com/user-attachments/assets/be2279b4-fb09-484e-bd1d-564cde277c64" />
 
 
 - Inbound flow  :  Internet --> Firewall --> Application Gateway --> webSubnet (VMSS)
@@ -37,7 +37,27 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 ## Demonstration:
 
-# Task 1 : 
+# Task 1 : Vnets, Subnets & Golden image, Public IPs
+
+
+<img width="639" height="141" alt="image" src="https://github.com/user-attachments/assets/7f4d2177-10c0-4231-835a-c61762ca4e32" />
+
+-  mgmtVnet : AzureFirewallSubnet & AzureBastionSubnet
+
+<img width="930" height="140" alt="image" src="https://github.com/user-attachments/assets/a69a4248-9dd8-4cdc-8a57-a714c1b1b3f6" />
+
+- workloadVnet : appGatewaySubnet & webSubnet
+
+<img width="1067" height="165" alt="image" src="https://github.com/user-attachments/assets/2e45240b-6814-46bb-a3e6-c314a324caa5" />
+
+- Captured Images : Apache Servers - VM1 (defult + products page) & VM2 (offers + payments page)
+
+<img width="1037" height="138" alt="image" src="https://github.com/user-attachments/assets/379c9e86-309b-453b-86e3-32ec1d90c526" />
+
+- 3 public ips required for this project :
+  - firewall-pip
+  - bastion-pip
+  - appGateway-pip 
 
 
 
