@@ -64,15 +64,16 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 - Peering : mgmtVnet <---> workloadVnet
 
+-----------------------------------
 
-# Task 2 : Scale Sets (uniform orchestration), Custom Auto Scale rules User-defined Routes, 
+# Task 2 : Scale Sets (uniform orchestration) & Custom Auto Scale rules
 
 - Deployed two scale sets in uniform orchestration mode. Why? Identical VMs (except for thier content) in the scale set
 - Custom auto scale rules : Scale out & Scale in based on avg. CPU usage
   - Scale out : Avg. CPU usage > 70%
   - Scale in : Avg. CPU uage < 30 for a duration of 5 mins
 
--------------------------------
+------------------------------------
 
 <img width="880" height="126" alt="image" src="https://github.com/user-attachments/assets/eb51aaaa-7ec8-4ac5-936b-f719bb7f4090" />
 
@@ -86,4 +87,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 - Scaling rules
 
+---------------------------------------
+
+Task 3 : Firewall, Application Gateway and User-defined Routes
 
