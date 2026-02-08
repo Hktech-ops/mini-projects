@@ -25,9 +25,9 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 - For implemetation, I captured two golden images, for each VM with their respective configurations and deployed them in scale set 
 ---------------------------------------------------
 
-## Demontration:
+## Demonstration:
 
-## Task 1 : 
+# Task 1 : 
 
 
 
