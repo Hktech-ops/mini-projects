@@ -59,12 +59,11 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 - Captured Images : Apache Servers - VM1 (defult + products page) & VM2 (offers + payments page)
 
-<img width="1037" height="139" alt="image" src="https://github.com/user-attachments/assets/75dfe178-f43a-416d-83b8-d15dfe7c1a7e" />
+<img width="1004" height="106" alt="image" src="https://github.com/user-attachments/assets/8adc40ad-7f17-4f47-9b59-788911798088" />
 
-- public ips required for this project :
+- 2 public ips required for this project :
   - firewall-pip
   - bastion-pip
-  - appGateway-pip (NOT exposed to internet - created just to be able to use Firewall)
 
 
 <img width="930" height="348" alt="image" src="https://github.com/user-attachments/assets/4912d4c2-68e2-41c9-96d7-ca68c2b8d11e" />
