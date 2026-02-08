@@ -29,7 +29,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 <img width="1063" height="539" alt="image" src="https://github.com/user-attachments/assets/720df0e5-c81d-40a2-b7ed-e334c3844d8f" />
 
-- Inbound flow  :  Internet --> Firewall --> Application Gateway(WAF V2 - private ONLY frontend, no public IP) --> webSubnet (VMSS)
+- Inbound flow  :  Internet --> Firewall --> Application Gateway(Standard V2) --> webSubnet (VMSS)
 
   <img width="223" height="142" alt="image" src="https://github.com/user-attachments/assets/51ebace4-8981-4fa8-b4b1-d0dba59a1c02" />
   
@@ -115,3 +115,5 @@ Task 3 : Firewall, Application Gateway and User-defined Routes
 
 path based routing rules
 allowed from private ip of app gateway --> why? firewall DNAT will translate allowed incoming traffic to app gateway's private ip 
+
+
