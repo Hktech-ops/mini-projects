@@ -97,29 +97,28 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 ---------------------------------------
 
-## Task 3 : Firewall, Application Gateway and User-defined Routes
+# Task 3 : Firewall, Application Gateway and User-defined Routes & NSG
 
 
 <img width="645" height="239" alt="image" src="https://github.com/user-attachments/assets/89e24460-3251-44f4-b914-1e1ea59044ec" />
 
-- Created myFirewall
+- Deployed myFirewall
 
 <img width="771" height="233" alt="image" src="https://github.com/user-attachments/assets/9a568706-1b3a-4e9f-9478-d5df701166e5" />
 
 - Firewall ip-config
 
-<img width="1843" height="421" alt="image" src="https://github.com/user-attachments/assets/d02a7f49-4e39-4378-a36b-0367251ceaf9" />
+<img width="1840" height="395" alt="image" src="https://github.com/user-attachments/assets/4958df8d-1eed-4e0e-bc37-b09ca936d382" />
 
 - Firewall : NAT rule
-
+- Internet --> Firewall public IP --> translated to App Gateway's private IP (port 80)
 
 
 - app gateway --> path-based routing
 
 <img width="832" height="766" alt="image" src="https://github.com/user-attachments/assets/f6a3993d-dbce-4448-ada6-7f027492dd15" />
 
-path based routing rules
-allowed from private ip of app gateway --> why? firewall DNAT will translate allowed incoming traffic to app gateway's private ip 
+
 
 
 <img width="1491" height="265" alt="image" src="https://github.com/user-attachments/assets/f1fd9b0e-3026-4f09-800b-ce44872dd77f" />
@@ -131,22 +130,45 @@ allowed from private ip of app gateway --> why? firewall DNAT will translate all
 
 - NSG inbound rule - allowed inbound HTTP traffic from appGateway on port 80
 
-<img width="1892" height="406" alt="image" src="https://github.com/user-attachments/assets/cadc6895-a113-44e5-8932-80fc9de7281b" />
+<img width="1896" height="394" alt="image" src="https://github.com/user-attachments/assets/0c4bff20-61a4-4f5f-ad75-da957c0a319d" />
 
+<img width="1396" height="406" alt="image" src="https://github.com/user-attachments/assets/ea377468-0a81-442a-8376-d4a20b245480" />
+
+
+
+
+- Associated nyNSG to webSubnet
+<img width="1479" height="203" alt="image" src="https://github.com/user-attachments/assets/5cb9f9af-39e2-4686-9bd0-0e873a913be5" />
 
 
 
 ----------------------
 
+# Task 4 : Test + Validation
 
 
+<img width="1488" height="495" alt="image" src="https://github.com/user-attachments/assets/b686ed90-3e31-44b9-9b2c-dc4003c76871" />
 
+/default page
+------------
 
-<img width="1710" height="432" alt="image" src="https://github.com/user-attachments/assets/71340a8a-30f7-47fd-a927-0bf990d3616e" />
-**** NSG with inbound from App Gateway ***
+<img width="1292" height="449" alt="image" src="https://github.com/user-attachments/assets/f3f01e4e-db60-4820-bbc4-eb3cf7b4af29" />
 
+/products page
 
-<img width="506" height="241" alt="image" src="https://github.com/user-attachments/assets/da8980e8-6adb-41fd-9229-10328fee9b4b" />
-*** associated with webSubnet
+-------------
 
+<img width="1161" height="414" alt="image" src="https://github.com/user-attachments/assets/9541f8f5-602b-4b20-b23d-6728ab6af2ed" />
+
+/offers page
+
+---------------
+
+<img width="1115" height="404" alt="image" src="https://github.com/user-attachments/assets/def86ab5-b22b-4b5d-aa26-9248b76020b5" />
+
+/payments page
+
+----------------------------------------
+
+*** THIS MARKS THE END OF PROJECT ***
 
