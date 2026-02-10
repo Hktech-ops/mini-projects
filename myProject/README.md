@@ -97,7 +97,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 ---------------------------------------
 
-Task 3 : Firewall, Application Gateway and User-defined Routes
+## Task 3 : Firewall, Application Gateway and User-defined Routes
 
 
 <img width="645" height="239" alt="image" src="https://github.com/user-attachments/assets/89e24460-3251-44f4-b914-1e1ea59044ec" />
@@ -108,9 +108,13 @@ Task 3 : Firewall, Application Gateway and User-defined Routes
 
 - Firewall ip-config
 
+<img width="1843" height="421" alt="image" src="https://github.com/user-attachments/assets/d02a7f49-4e39-4378-a36b-0367251ceaf9" />
 
---- app gateway
+- Firewall : NAT rule
 
+
+
+- app gateway --> path-based routing
 
 <img width="832" height="766" alt="image" src="https://github.com/user-attachments/assets/f6a3993d-dbce-4448-ada6-7f027492dd15" />
 
@@ -118,14 +122,23 @@ path based routing rules
 allowed from private ip of app gateway --> why? firewall DNAT will translate allowed incoming traffic to app gateway's private ip 
 
 
+<img width="1491" height="265" alt="image" src="https://github.com/user-attachments/assets/f1fd9b0e-3026-4f09-800b-ce44872dd77f" />
+
+- User defined route to internet via Firewall : VM instances --> Firewall --> Internet
+
+
+
+
+- NSG inbound rule - allowed inbound HTTP traffic from appGateway on port 80
+
+<img width="1892" height="406" alt="image" src="https://github.com/user-attachments/assets/cadc6895-a113-44e5-8932-80fc9de7281b" />
+
+
+
+
 ----------------------
 
-<img width="646" height="197" alt="image" src="https://github.com/user-attachments/assets/d2656ee7-ded5-48b9-98a3-575428c97b3d" />
 
-- Queried Private IP address of Firewall
-
-
-<img width="1089" height="326" alt="image" src="https://github.com/user-attachments/assets/d63b76ff-05cf-4410-9ff2-1305d6058089" />
 
 
 
