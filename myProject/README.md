@@ -1,6 +1,6 @@
 ## Highly Available, Scalable & Secure Web Architecture on Azure
 
-This project delivers a production-ready, scalable, and secure web architecture built on Microsoft Azure.
+This project delivers a production-ready, highly-available, scalable, and secure web architecture built on Microsoft Azure.
 The solution uses Virtual Machine Scale Sets for elastic compute, Application Gateway for path based routing to healthy VMs, and multi-zonal deployment to eliminate single points of failure, providing zone-level redundancy and high availability.
 
 - The environment follows modern cloud architecture practices, including:
