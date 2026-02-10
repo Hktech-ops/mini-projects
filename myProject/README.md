@@ -18,7 +18,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
   - Block direct outbound (from private VM instances)
  
 - Virtual machines are running on Apache server - which is loaded with Static Web pages
-- Scale Set includes 2 VM instances to begin with. Custom scale set is configured to sale out to a mazimum of 4 instances (2 for each path) - to handle spike in traffic
+- Scale Set includes 2 VM instances (one in each scale set) to begin with. Custom scaling is configured to sale out to a mazimum of 4 instances (2 for each path) - to handle spike in traffic
   - myScaleSet1 : path to default + product web page
   - myScaleSet2 : path to offers + payments web page
 
@@ -65,7 +65,7 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
   - firewall-pip
   - bastion-pip
   - appGateway-pip (both private and public IP, however, public IP is NOT exposed to internet, keeping the gateway private)
-    - created merely as Standard V2 Application Gateway required to have both public and private IP addresses! 
+    - created merely as Standard V2 Application Gateway requires to have both public and private IP addresses! 
 
 
 <img width="930" height="348" alt="image" src="https://github.com/user-attachments/assets/4912d4c2-68e2-41c9-96d7-ca68c2b8d11e" />
