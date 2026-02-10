@@ -136,35 +136,42 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
 
 
 
-
 - Associated nyNSG to webSubnet
 <img width="1479" height="203" alt="image" src="https://github.com/user-attachments/assets/5cb9f9af-39e2-4686-9bd0-0e873a913be5" />
 
 
+-----------------------------------------------------------------------
 
-----------------------
+# Task 4 : Public DNS zone and record sets:
 
-# Task 4 : Test + Validation
+<img width="828" height="563" alt="image" src="https://github.com/user-attachments/assets/40eceec9-6c55-4a0a-a5e6-d29d6ee53a08" />
+
+- DNS zone
+  - A record 
+
+-----------------------------------------------------------------------
+
+# Task 5 : Test + Validation
 
 
-<img width="1488" height="495" alt="image" src="https://github.com/user-attachments/assets/b686ed90-3e31-44b9-9b2c-dc4003c76871" />
+<img width="1337" height="426" alt="image" src="https://github.com/user-attachments/assets/9a79963e-c780-4c9a-911d-81869c409246" />
 
 /default page
 ------------
 
-<img width="1292" height="449" alt="image" src="https://github.com/user-attachments/assets/f3f01e4e-db60-4820-bbc4-eb3cf7b4af29" />
+<img width="1137" height="442" alt="image" src="https://github.com/user-attachments/assets/68ce4f5e-447d-4dba-a433-ca760f4014b6" />
 
 /products page
 
 -------------
 
-<img width="1161" height="414" alt="image" src="https://github.com/user-attachments/assets/9541f8f5-602b-4b20-b23d-6728ab6af2ed" />
+<img width="1157" height="407" alt="image" src="https://github.com/user-attachments/assets/4cff6f6d-1a4a-4a77-9944-8ae2bf44530e" />
 
 /offers page
 
 ---------------
 
-<img width="1115" height="404" alt="image" src="https://github.com/user-attachments/assets/def86ab5-b22b-4b5d-aa26-9248b76020b5" />
+<img width="1092" height="420" alt="image" src="https://github.com/user-attachments/assets/475f21b6-c2a5-420f-b86c-97ec971876d9" />
 
 /payments page
 
