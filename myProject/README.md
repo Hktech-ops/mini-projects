@@ -19,8 +19,8 @@ The solution uses Virtual Machine Scale Sets for elastic compute, Application Ga
  
 - Virtual machines are running on Apache server - which is loaded with Static Web pages
 - Scale Set includes 2 VM instances to begin with. Custom scale set is configured to sale out to a mazimum of 4 instances (2 for each path) - to handle spike in traffic
-  - VM1 : path to default + product web page
-  - VM2 : path to offers + payments web page
+  - myScaleSet1 : path to default + product web page
+  - myScaleSet2 : path to offers + payments web page
 
 - For implemetation, I captured two golden images, for each VM with their respective configurations and deployed them in scale set 
 ---------------------------------------------------
