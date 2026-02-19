@@ -9,7 +9,7 @@ This project demonstrates how to host a static website using blob storage. It is
 
 - Architecture Overview:
   -  GPv2 storage account - with web hosting enabled
-  -  Access restricted to only adminVM's subnet
+  -  Storage account access restricted to only adminVM's subnet
   -  Secure website management via adminVM
   -  $web container stores site files
   -  Public https endpoint with custom domain
