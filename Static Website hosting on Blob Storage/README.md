@@ -1,5 +1,13 @@
 ## Static Website Hosting on Azure Blob Storage
 
+
+
+****
+
+Get back to this one with CDN and Front Door to make it enterprise grade!
+
+****
+
 This project demonstrates how to host a static website using blob storage. It is a cost-optimized, serverless way to publish a personal portfolio or landing page.  
 
 
@@ -13,5 +21,14 @@ This project demonstrates how to host a static website using blob storage. It is
   -  Secure website management via adminVM
   -  $web container stores site files
   -  Public https endpoint with custom domain
+
+
+-----------------------------------------------------------------
+
+## Demonstration
+
+
+# Task 1: Resource Group, Storage account & Web container
+
 
 
